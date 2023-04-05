@@ -128,3 +128,47 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .resume {
+        padding: 30px;
+        .title {
+            font-size: 25px;
+        }
+
+        .greeting {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+        }
+
+        .experience {
+            .left {
+                h3 {
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-bottom: 6px;
+                }
+                h4 {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+            .right {
+                h3 {
+                    font-size: 15px;
+                }
+                ul {
+                    font-size: 13px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -31,3 +31,17 @@
         }
     }
 }
+
+@media (min-width: 750px) and (max-width: 991px) {
+    .marquee {
+        max-width: 180px;
+        height: 30px;
+        h1 {
+            font-size: 13px;
+            &::before {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}

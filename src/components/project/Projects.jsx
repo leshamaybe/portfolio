@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './project.module.scss';
 import Button from '../screens/works/button/Button';
 import Image from 'next/image';
 
+
+
 const Projects = ({ name, desc, tools, src }) => {
+    
+
     return (
         <div className={s.info}>
             <div className={s.left}>

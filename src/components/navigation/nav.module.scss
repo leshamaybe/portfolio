@@ -37,3 +37,28 @@ $light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        ul {
+            li {
+                .link {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        ul {
+            justify-content: space-evenly;
+            li {
+                .link {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
