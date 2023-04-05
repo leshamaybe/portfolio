@@ -1,0 +1,39 @@
+$light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
+
+.navbar {
+    max-width: 300px;
+    width: 100%;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            .link {
+                background: $light-gradient bottom center no-repeat;
+                background-size: 0px 1px;
+                padding-bottom: 5px;
+                transition: 0.25s;
+                font-weight: 500;
+                font-size: 18px;
+                color: rgb(188, 190, 208);
+                text-decoration: none;
+            }
+
+            .link:hover {
+                background-size: 100% 2px;
+                transition: all 0.25s ease;
+                color: rgb(20 20 43);
+            }
+
+            .current {
+                background: $light-gradient bottom center no-repeat;
+                background-size: 100% 2px;
+                font-weight: 600;
+                color: rgb(20 20 43);
+            }
+        }
+    }
+}

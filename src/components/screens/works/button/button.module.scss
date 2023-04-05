@@ -1,0 +1,66 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+
+    :active,
+    :hover,
+    :focus {
+        outline: 0 !important;
+        outline-offset: 0;
+    }
+
+    ::before,
+    ::after {
+        position: absolute;
+        content: '';
+    }
+}
+
+.btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+.btn-1::before {
+    background-color: #004dff;
+    transition: 0.3s ease-out;
+}
+
+.btn-1 span {
+    color: #063ef9;
+    border: 1px solid #063ef9;
+    transition: 0.2s 0.1s;
+}
+
+.btn-1 span:hover {
+    color: #00baff;
+    transition: 0.2s 0.1s;
+    border-color: #00baff;
+}
+
+.btn.hover-filled-slide-left::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.btn.hover-filled-slide-left:hover::before {
+    width: 0%;
+}

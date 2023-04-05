@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Basier Circle';
+    src: url('../../public/BasierCircle/BasierCircle-Bold.eot');
+    src: local('Basier Circle Bold'), local('BasierCircle-Bold'),
+        url('../../public/BasierCircle/BasierCircle-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierCircle-Bold.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierCircle-Bold.woff') format('woff'),
+        url('../../public/BasierCircle/BasierCircle-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Circle';
+    src: url('../../public/BasierCircle/BasierCircle-SemiBold.eot');
+    src: local('Basier Circle SemiBold'), local('BasierCircle-SemiBold'),
+        url('../../public/BasierCircle/BasierCircle-SemiBold.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierCircle-SemiBold.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierCircle-SemiBold.woff') format('woff'),
+        url('../../public/BasierCircle/BasierCircle-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Circle';
+    src: url('../../public/BasierCircle/BasierCircle-Medium.eot');
+    src: local('Basier Circle Medium'), local('BasierCircle-Medium'),
+        url('../../public/BasierCircle/BasierCircle-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierCircle-Medium.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierCircle-Medium.woff') format('woff'),
+        url('../../public/BasierCircle/BasierCircle-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Circle';
+    src: url('../../public/BasierCircle/BasierCircle-Regular.eot');
+    src: local('Basier Circle Regular'), local('BasierCircle-Regular'),
+        url('../../public/BasierCircle/BasierCircle-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierCircle-Regular.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierCircle-Regular.woff') format('woff'),
+        url('../../public/BasierCircle/BasierCircle-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Square';
+    src: url('../../public/BasierCircle/BasierSquare-SemiBold.eot');
+    src: local('Basier Square SemiBold'), local('BasierSquare-SemiBold'),
+        url('../../public/BasierCircle/BasierSquare-SemiBold.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierSquare-SemiBold.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierSquare-SemiBold.woff') format('woff'),
+        url('../../public/BasierCircle/BasierSquare-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Square';
+    src: url('../../public/BasierCircle/BasierSquare-Medium.eot');
+    src: local('Basier Square Medium'), local('BasierSquare-Medium'),
+        url('../../public/BasierCircle/BasierSquare-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierSquare-Medium.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierSquare-Medium.woff') format('woff'),
+        url('../../public/BasierCircle/BasierSquare-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Square';
+    src: url('../../public/BasierCircle/BasierSquare-Regular.eot');
+    src: local('Basier Square Regular'), local('BasierSquare-Regular'),
+        url('../../public/BasierCircle/BasierSquare-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierSquare-Regular.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierSquare-Regular.woff') format('woff'),
+        url('../../public/BasierCircle/BasierSquare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basier Square';
+    src: url('../../public/BasierCircle/BasierSquare-Bold.eot');
+    src: local('Basier Square Bold'), local('BasierSquare-Bold'),
+        url('../../public/BasierCircle/BasierSquare-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/BasierCircle/BasierSquare-Bold.woff2') format('woff2'),
+        url('../../public/BasierCircle/BasierSquare-Bold.woff') format('woff'),
+        url('../../public/BasierCircle/BasierSquare-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

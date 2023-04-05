@@ -1,0 +1,130 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 900px;
+    padding: 70px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: rgb(249 250 251 / 1);
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .greeting {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .left {
+            h3 {
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+            h4 {
+                font-weight: 400;
+            }
+        }
+        .right {
+            ul {
+                padding: 0;
+            }
+        }
+    }
+
+    .education {
+        h3 {
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        h4 {
+            font-weight: 400;
+            line-height: 22px;
+        }
+        p {
+            text-align: left;
+            font-size: 16px;
+            margin-top: 6px;
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-weight: 400;
+                padding: 12px;
+                list-style: inside;
+            }
+        }
+    }
+
+    .resume-social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        background-color: inherit;
+        transition: 0.25s;
+        padding: 15px;
+
+        svg:hover {
+            transition: 0.25s;
+            fill: #000;
+        }
+    }
+
+    .cv {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(237, 243, 236);
+        padding: 18px;
+        margin-top: 20px;
+        border-radius: 5px;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            margin-top: 8px;
+            padding: 10px 0 10px 3px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: rgb(226, 230, 226);
+            }
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+}

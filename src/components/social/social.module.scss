@@ -1,0 +1,20 @@
+$light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    background: rgb(229, 231, 235);
+    border-radius: 20px;
+
+    svg {
+        margin: 7px 15px 7px 15px;
+        transition: all 0.2s;
+    }
+
+    svg:hover {
+        text-align: center;
+        fill: url(#Gradient-1);
+        transition: all 0.2s;
+    }
+}
