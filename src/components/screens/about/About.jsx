@@ -4,7 +4,7 @@ import s from './about.module.scss';
 const About = () => {
     return (
         <div className={s.about}>
-            <h1>Hi, hello and welcome stranger</h1>
+            Hi, hello and welcome stranger
             <p>
                 My name is Alexei. Now I am studying at the Voronezh State Technical University
                 (VSTU) in the field of "Information Systems in Business". I started to study

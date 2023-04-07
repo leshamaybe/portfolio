@@ -7,8 +7,8 @@ import Download from '../../../assets/resume/Download';
 const Resume = () => {
     return (
         <div className={s.resume}>
-            <h1 className={s.title}>Aleksey Voronko</h1>
-            <h3 className={s.greeting}>👋 I'm a frontend developer</h3>
+            <h1>Aleksey Voronko</h1>
+            <h3>👋 I'm a frontend developer</h3>
             <p>
                 Enthusiastic and detail-oriented junior Frontend Developer with good knowledge of
                 JS, HTML and CSS as well as third-party libraries, React and Redux. I strive to use
@@ -18,7 +18,7 @@ const Resume = () => {
 
             <Social className={s['resume-social']} />
 
-            <h2 className={s.subtitle}>Experience</h2>
+            <h2>Experience</h2>
             <section className={s.experience}>
                 <div className={s.left}>
                     <h3>July 2020 - November</h3>

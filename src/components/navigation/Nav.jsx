@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import s from './nav.module.scss';
-import cn from 'classnames';
 import { useRouter } from 'next/router';
+import cn from 'classnames';
+import s from './nav.module.scss';
 
 export const navItems = [
     {

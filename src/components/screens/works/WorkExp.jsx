@@ -11,6 +11,7 @@ const projectItems = [
         desc: "The Messenger app is a real-time chat application built with React, JavaScript, Socket.io, Express, and MongoDB. It allows users to communicate through instant messaging, and provides a dynamic and responsive interface for sending and receiving messages. It's not finished yet :(",
         tools: ['React', 'Hooks', 'Express', 'Socket.io', 'MongoDB', 'Axios', 'JWT-token'],
         img: chat,
+        link: 'https://github.com/leshamaybe/react-express-socket-chat-app',
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ const projectItems = [
         desc: 'A weather application built with React that displays current weather conditions for a selected location. Uses OpenWeatherMap API for weather data.',
         tools: ['React', 'Hooks', 'Axios'],
         img: weather,
+        link: 'https://github.com/leshamaybe/react-weather-app',
     },
     {
         id: 3,
@@ -25,14 +27,24 @@ const projectItems = [
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio asperiores aliquid in. Et dolor nobis, ad facere asperiores dicta cum numquam consequuntur tempora corporis?',
         tools: ['React', 'Hooks', 'Redux', 'Express', 'MongoDB', 'Axios'],
         img: whales,
+        link: '/',
     },
 ];
 
 const WorkExp = () => {
     return (
         <>
-            {projectItems.map(({ id, name, desc, tools, img }) => {
-                return <Projects key={id} name={name} desc={desc} tools={tools} src={img} />;
+            {projectItems.map(({ id, name, desc, tools, img, link }) => {
+                return (
+                    <Projects
+                        key={id}
+                        name={name}
+                        desc={desc}
+                        tools={tools}
+                        src={img}
+                        link={link}
+                    />
+                );
             })}
         </>
     );

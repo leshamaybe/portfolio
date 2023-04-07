@@ -1,12 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 import s from './button.module.scss';
 import cn from 'classnames';
 
-const Button = () => {
+const Button = ({ link }) => {
     return (
-        <div className={cn(s.btn, s['btn-1'], s['hover-filled-slide-left'])}>
-            <span>VIEW PROJECT</span>
-        </div>
+        <Link href={link} className={cn(s.btn, s['btn-1'])}>
+            VIEW PROJECT
+        </Link>
     );
 };
 
