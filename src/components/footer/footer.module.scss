@@ -1,21 +1,16 @@
 .footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
-
-    h1 {
-        font-size: 18px;
-        font-weight: 400;
-    }
+    font-size: 18px;
+    font-weight: 400;
 }
 
 @media (max-width: 480px) {
     .footer {
         h1 {
             font-size: 13px;
-            font-weight: 400;
         }
     }
 }
