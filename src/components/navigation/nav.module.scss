@@ -1,64 +1,44 @@
 $light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
 
 .navbar {
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
+    height: 52px;
+
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0;
-
         li {
             list-style: none;
 
             .link {
                 background: $light-gradient bottom center no-repeat;
-                background-size: 0px 1px;
-                padding-bottom: 5px;
+                background-size: 0px 2px;
+                padding: 5px;
                 transition: 0.25s;
-                font-weight: 500;
-                font-size: 18px;
+                font-size: calc(13px + 3 * (100vw - 320px) / 928);
                 color: rgb(188, 190, 208);
                 text-decoration: none;
-            }
 
-            .link:hover {
-                background-size: 100% 2px;
-                transition: all 0.25s ease;
-                color: rgb(20 20 43);
-            }
+                &:hover {
+                    background-size: 100% 2px;
+                    transition: all 0.25s ease;
+                    color: rgb(20 20 43);
+                }
 
-            .current {
-                background: $light-gradient bottom center no-repeat;
-                background-size: 100% 2px;
-                font-weight: 600;
-                color: rgb(20 20 43);
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar {
-        ul {
-            li {
-                .link {
-                    font-size: 14px;
+                &.current {
+                    background-size: 100% 2px;
+                    font-weight: 600;
+                    color: rgb(20 20 43);
                 }
             }
         }
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1440px) {
     .navbar {
-        ul {
-            justify-content: space-evenly;
-            li {
-                .link {
-                    font-size: 13px;
-                }
-            }
-        }
+        max-width: 450px;
     }
 }

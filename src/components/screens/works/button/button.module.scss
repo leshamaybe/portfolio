@@ -2,12 +2,12 @@
     padding: 15px 20px;
     background-color: transparent;
     font-size: 14px;
-    font-weight: bold;
     color: #000;
     border: 1px solid #000;
     transition: 0.2s 0.1s;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {
@@ -15,4 +15,8 @@
         transition: 0.2s 0.1s;
         border-color: #004dff;
     }
+    a {
+        margin-bottom: 30px;
+    }
 }
+

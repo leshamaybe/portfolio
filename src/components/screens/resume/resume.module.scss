@@ -1,68 +1,58 @@
 .resume {
     display: flex;
     flex-direction: column;
-    max-width: 900px;
-    padding: 70px;
-    margin-top: 50px;
+    max-width: 920px;
+    padding: calc(10px + 24 * (100vw - 320px) / 928);
+    margin-top: calc(10px + 10 * (100vw - 320px) / 928);
     border-radius: 20px;
     background-color: rgb(249 250 251 / 1);
 
-    .title {
-        font-size: 30px;
+    h1 {
+        font-size: calc(20px + 5 * (100vw - 320px) / 928);
         font-weight: 600;
         margin-bottom: 20px;
     }
-
-    .greeting {
+    h2 {
+        font-size: calc(18px + 3 * (100vw - 320px) / 928);
+        margin: 30px 0 12px 0;
+    }
+    h3 {
+        font-size: calc(14px + 3 * (100vw - 320px) / 928);
         font-weight: 500;
-        font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: calc(13px + 3 * (100vw - 320px) / 928);
+        font-weight: 400;
+        line-height: 22px;
     }
 
     p {
-        font-size: 20px;
+        font-size: calc(13px + 3 * (100vw - 320px) / 928);
         font-weight: 400;
-        margin-bottom: 20px;
-    }
-
-    .subtitle {
-        margin-top: 30px;
         margin-bottom: 20px;
     }
 
     .experience {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         margin-bottom: 20px;
-
-        .left {
-            h3 {
-                font-weight: 500;
-                margin-bottom: 6px;
-            }
-            h4 {
-                font-weight: 400;
-            }
-        }
         .right {
+            h3 {
+                font-size: calc(14px + 3 * (100vw - 320px) / 928);
+            }
             ul {
                 padding: 0;
+                li {
+                    font-size: calc(14px + 3 * (100vw - 320px) / 928);
+                    list-style: inside;
+                }
             }
         }
     }
 
     .education {
-        h3 {
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        h4 {
-            font-weight: 400;
-            line-height: 22px;
-        }
         p {
-            font-size: 16px;
             margin-top: 6px;
         }
     }
@@ -72,12 +62,14 @@
         justify-content: space-between;
 
         ul {
+            font-size: calc(14px + 3 * (100vw - 320px) / 928);
             font-weight: 500;
             margin: 0;
             padding: 0;
             li {
+                font-size: calc(12px + 3 * (100vw - 320px) / 928);
                 font-weight: 400;
-                padding: 12px;
+                padding: calc(4px + 5 * (100vw - 320px) / 928);
                 list-style: inside;
             }
         }
@@ -89,7 +81,6 @@
         width: 200px;
         transition: 0.25s;
         padding: 15px;
-
         svg:hover {
             transition: 0.25s;
             fill: #000;
@@ -97,8 +88,6 @@
     }
 
     .cv {
-        display: flex;
-        flex-direction: column;
         background-color: rgb(237, 243, 236);
         padding: 18px;
         margin-top: 20px;
@@ -114,70 +103,6 @@
             }
             svg {
                 margin-right: 5px;
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .resume {
-        margin-top: 10px;
-        padding: 10px;
-        .title {
-            font-size: 23px;
-        }
-
-        .greeting {
-            font-size: 17px;
-        }
-
-        p {
-            font-size: 15px;
-        }
-
-        .subtitle {
-            font-size: 20px;
-        }
-
-        .experience {
-            .left {
-                h3 {
-                    font-size: 15px;
-                    font-weight: 500;
-                    margin-bottom: 6px;
-                }
-                h4 {
-                    font-size: 15px;
-                    font-weight: 400;
-                }
-            }
-            .right {
-                h3 {
-                    font-size: 15px;
-                }
-                ul {
-                    font-size: 13px;
-                    padding: 0;
-                }
-            }
-        }
-
-        .skills {
-            display: flex;
-            justify-content: space-between;
-
-            ul {
-                font-size: 15px;
-                font-weight: 500;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    font-size: 14px;
-                    font-weight: 400;
-                    padding: 12px;
-                    list-style: inside;
-                }
             }
         }
     }

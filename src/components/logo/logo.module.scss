@@ -2,24 +2,12 @@
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size: 24px;
+    font-size: calc(16px + 4 * (100vw - 320px) / 928);
     color: #000;
     transition: all 0.2s ease;
     text-decoration: none;
 
     svg {
-        margin-right: 10px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .text {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .text {
-        font-size: 16px;
+        margin-right: calc(5px + 5 * (100vw - 320px) / 928);
     }
 }
