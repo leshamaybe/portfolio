@@ -5,7 +5,7 @@ import AnimatedText from './AnimatedText/AnimatedText';
 
 const HomePage = () => {
     return (
-        <>
+        <div className={s.box}>
             <div className={s.text}>
                 <AnimatedText text="Hey, I'm Aleksey" />
                 <h2>
@@ -14,7 +14,7 @@ const HomePage = () => {
                 </h2>
             </div>
             <Social />
-        </>
+        </div>
     );
 };
 

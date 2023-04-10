@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import s from './mainContainer.module.scss';
-import Social from '../social/Social';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import { motion } from 'framer-motion';

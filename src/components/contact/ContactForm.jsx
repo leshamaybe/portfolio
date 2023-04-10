@@ -14,7 +14,7 @@ const ContactForm = () => {
     }
 
     return (
-        <>
+        <div className={s.box}>
             <div className={s.top}>
                 <h1>
                     LET'S BUILD <span>A THING</span>
@@ -44,7 +44,7 @@ const ContactForm = () => {
                     Send Request
                 </button>
             </form>
-        </>
+        </div>
     );
 };
 
