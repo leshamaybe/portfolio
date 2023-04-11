@@ -1,21 +1,21 @@
 import React from 'react';
 import Projects from '../../project/Projects';
 import weather from '../../../assets/works/weather.png';
-import chat from '../../../assets/works/chat.png';
+import chat from '@/assets/works/chat-group2.png';
 import whales from '../../../assets/works//whales.png';
 
 const projectItems = [
     {
         id: 1,
-        name: 'Messenger',
-        desc: "The Messenger app is a real-time chat application built with React, JavaScript, Socket.io, Express, and MongoDB. It allows users to communicate through instant messaging, and provides a dynamic and responsive interface for sending and receiving messages. It's not finished yet :(",
+        name: 'Full realtime Chat Application',
+        desc: "App, Messenger, chat",
         tools: ['React', 'Hooks', 'Express', 'Socket.io', 'MongoDB', 'Axios', 'JWT-token'],
         img: chat,
         link: 'https://github.com/leshamaybe/react-express-socket-chat-app',
     },
     {
         id: 2,
-        name: 'Weather',
+        name: 'Weather app on the OpenWeatherMap API',
         desc: 'A weather application built with React that displays current weather conditions for a selected location. Uses OpenWeatherMap API for weather data.',
         tools: ['React', 'Hooks', 'Axios'],
         img: weather,
@@ -23,7 +23,7 @@ const projectItems = [
     },
     {
         id: 3,
-        name: 'whales',
+        name: 'A ReactJS based landing page',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio asperiores aliquid in. Et dolor nobis, ad facere asperiores dicta cum numquam consequuntur tempora corporis?',
         tools: ['React', 'Hooks', 'Redux', 'Express', 'MongoDB', 'Axios'],
         img: whales,
@@ -37,6 +37,7 @@ const WorkExp = () => {
             {projectItems.map(({ id, name, desc, tools, img, link }) => {
                 return (
                     <Projects
+                        id={id}
                         key={id}
                         name={name}
                         desc={desc}

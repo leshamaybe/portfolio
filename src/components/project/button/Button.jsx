@@ -3,9 +3,9 @@ import Link from 'next/link';
 import s from './button.module.scss';
 import cn from 'classnames';
 
-const Button = ({ link }) => {
+const Button = ({ link, classname }) => {
     return (
-        <Link href={link} className={cn(s.btn, s['btn-1'])}>
+        <Link href={link} className={cn(s.btn, classname)}>
             VIEW PROJECT
         </Link>
     );
