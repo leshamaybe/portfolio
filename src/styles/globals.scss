@@ -115,7 +115,6 @@
 body {
     max-width: 1248px;
     margin: auto;
-    padding: 0 16px;
     font-family: 'Basier Circle', sans-serif;
     scroll-behaviour: smooth;
 }
@@ -139,4 +138,10 @@ p {
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    body {
+        padding: 0 16px;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './home.module.scss';
 import Social from '@/components/social/Social';
-import AnimatedText from './AnimatedText/AnimatedText';
+import AnimatedText from '../../../animation/AnimatedText/AnimatedText';
 
 const HomePage = () => {
     return (

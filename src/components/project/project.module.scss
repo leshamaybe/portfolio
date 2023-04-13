@@ -67,8 +67,12 @@
             }
         }
 
+        .animate-container {
+            overflow: hidden;
+        }
+
         .btn-work {
-            width: calc(170px + 30 * (100vw - 320px) / 928);
+            
             border: 1px solid #f36429;
             border-bottom: none;
             position: relative;
