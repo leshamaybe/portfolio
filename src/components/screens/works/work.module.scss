@@ -1,6 +1,13 @@
 .title {
-    font-size: calc(34px + 12 * (100vw - 320px) / 928);
+    font-size: calc(32px + 12 * (100vw - 320px) / 928);
+    // font-size: clamp(1.87rem, 3vw, 3.75rem);
     margin-top: calc(10px + 10 * (100vw - 320px) / 928);
     margin-bottom: calc(5px + 10 * (100vw - 320px) / 928);
     color: #2a2a2a;
+}
+
+@media (min-width: 2000px) {
+    .title {
+        font-size: 50px;
+    }
 }

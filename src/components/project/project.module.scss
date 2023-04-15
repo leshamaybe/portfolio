@@ -72,7 +72,6 @@
         }
 
         .btn-work {
-            
             border: 1px solid #f36429;
             border-bottom: none;
             position: relative;
@@ -185,6 +184,19 @@
                 background-color: #f36429;
                 color: #fff;
                 border: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 3000px) {
+    .box {
+        .text-box {
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 25px;
             }
         }
     }

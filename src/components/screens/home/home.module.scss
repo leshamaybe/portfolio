@@ -18,3 +18,17 @@
         }
     }
 }
+
+@media (min-width: 2000px) {
+    .box {
+        .text {
+            h1 {
+                font-size: 68px;
+            }
+            h2 {
+                font-size: 43px;
+                line-height: 59px;
+            }
+        }
+    }
+}

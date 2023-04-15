@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@formcarry/react": "^1.0.4",
-    "@motionone/utils": "^10.15.1",
     "@vercel/analytics": "^0.1.11",
     "classnames": "^2.3.2",
     "framer-motion": "^10.10.0",

@@ -17,7 +17,8 @@ $light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
                 background-size: 0px 2px;
                 padding: 5px;
                 transition: 0.25s;
-                font-size: calc(13px + 3 * (100vw - 320px) / 928);
+                // font-size: calc(13px + 3 * (100vw - 320px) / 928);
+                font-size: clamp(12px, 1vw, 20px);
                 color: rgb(188, 190, 208);
                 text-decoration: none;
 
@@ -29,7 +30,6 @@ $light-gradient: linear-gradient(95.08deg, #00baff 2.49%, #063ef9 97.19%);
 
                 &.current {
                     background-size: 100% 2px;
-                    font-weight: 600;
                     color: rgb(20 20 43);
                 }
             }

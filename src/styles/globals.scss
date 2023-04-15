@@ -113,15 +113,17 @@
 }
 
 body {
-    max-width: 1248px;
+    max-width: 1328px;
     margin: auto;
     font-family: 'Basier Circle', sans-serif;
     scroll-behaviour: smooth;
 }
 
 html {
+    font-size: 16px;
     overflow: scroll;
     overflow-x: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 h1,
@@ -140,7 +142,7 @@ p {
     box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1328px) {
     body {
         padding: 0 16px;
     }
