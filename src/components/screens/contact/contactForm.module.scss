@@ -1,0 +1,100 @@
+.contact {
+    .container {
+        max-width: 1328px;
+        width: 100%;
+        padding: 0 16px;
+        .top {
+            margin-top: calc(10px + 10 * (100vw - 320px) / 928);
+            h1 {
+                font-size: calc(45px + 12 * (100vw - 320px) / 928);
+                color: #004dff;
+
+                span {
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+            p {
+                margin: 20px calc(0px + 50 * (100vw - 320px) / 928) 0 0;
+                font-size: calc(25px + 5 * (100vw - 320px) / 928);
+            }
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin: 128px auto 0;
+            padding: 90px 0;
+            background: #1852d8;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 80px;
+                margin: 30px;
+
+                &.message {
+                    height: auto;
+                }
+
+                input,
+                textarea {
+                    font-size: 20px;
+                    font-family: 'Basier Circle', sans-serif;
+                    height: 100%;
+                    background: inherit;
+                    border: none;
+                    border-bottom: 2px solid #000;
+                    color: #fff;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+            }
+
+            label {
+                font-size: calc(20px + 3 * (100vw - 320px) / 928);
+                color: #fff;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-self: end;
+                align-self: end;
+                font-family: 'Basier Circle', sans-serif;
+                font-size: calc(15px + 3 * (100vw - 320px) / 928);
+                font-weight: 600;
+                color: #000;
+                background-color: #fff;
+                text-transform: uppercase;
+                padding: 10px 30px;
+                border: none;
+                cursor: pointer;
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        .container {
+            .form {
+                display: flex;
+                flex-direction: column;
+                margin-top: 80px;
+                padding: 50px 0;
+                div {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

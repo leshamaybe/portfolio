@@ -1,6 +1,6 @@
 import React from 'react';
 import MainContainer from '@/components/container/MainContainer';
-import ContactForm from '@/components/contact/ContactForm';
+import ContactForm from '@/components/screens/contact/ContactForm';
 
 const contact = () => {
     return (

@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import s from './animatedText.module.scss';
+import cn from 'classnames';
 
-const AnimatedText = ({ text }) => {
+const AnimatedText = ({ text, className }) => {
     const words = text.split(' ');
 
     const container = {
@@ -35,7 +36,7 @@ const AnimatedText = ({ text }) => {
     };
 
     return (
-        <motion.h1 className={s.display} variants={container} initial="hidden" animate="visible">
+        <motion.h1 className={cn(s.display, className)} variants={container} initial="hidden" animate="visible">
             {words.map((word, i) => (
                 <motion.span className={s.spacing} variants={child} key={i}>
                     {word}

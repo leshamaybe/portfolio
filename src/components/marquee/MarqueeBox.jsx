@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Marquee from 'react-fast-marquee';
 import s from './marquee.module.scss';
 import useWindowSize from '@/hooks/useWindowSize';

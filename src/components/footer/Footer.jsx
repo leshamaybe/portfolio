@@ -5,8 +5,10 @@ import s from './footer.module.scss';
 const Footer = () => {
     return (
         <footer className={s.footer}>
-            © 2023 Aleksey Voronko
-            <Social />
+            <div className={s.container}>
+                © 2023 Aleksey Voronko
+                <Social />
+            </div>
         </footer>
     );
 };

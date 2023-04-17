@@ -1,7 +1,11 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0;
+    max-width: 1328px;
+    width: 100%;
     font-size: calc(13px + 2 * (100vw - 320px) / 928);
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px 16px;
+    }
 }

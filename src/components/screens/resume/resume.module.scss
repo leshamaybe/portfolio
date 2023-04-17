@@ -1,108 +1,113 @@
 .resume {
-    display: flex;
-    flex-direction: column;
     margin: calc(10px + 10 * (100vw - 320px) / 928) auto 0;
-    max-width: 920px;
-    padding: calc(10px + 24 * (100vw - 320px) / 928);
-    border-radius: 20px;
-    background-color: rgb(249 250 251 / 1);
+    max-width: 1328px;
+    width: 100%;
 
-    h1 {
-        font-size: calc(20px + 5 * (100vw - 320px) / 928);
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    h2 {
-        font-size: calc(18px + 3 * (100vw - 320px) / 928);
-        margin: 30px 0 12px 0;
-    }
-    h3 {
-        font-size: calc(14px + 3 * (100vw - 320px) / 928);
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-    h4 {
-        font-size: calc(13px + 3 * (100vw - 320px) / 928);
-        font-weight: 400;
-        line-height: 22px;
-    }
-
-    p {
-        font-size: calc(13px + 3 * (100vw - 320px) / 928);
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-
-    .experience {
+    .container {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        .right {
-            h3 {
-                font-size: calc(14px + 3 * (100vw - 320px) / 928);
+        flex-direction: column;
+        max-width: 920px;
+        padding: calc(10px + 24 * (100vw - 320px) / 928);
+        background-color: rgb(249 250 251 / 1);
+        border-radius: 20px;
+
+        h1 {
+            font-size: calc(20px + 5 * (100vw - 320px) / 928);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: calc(18px + 3 * (100vw - 320px) / 928);
+            margin: 30px 0 12px 0;
+        }
+        h3 {
+            font-size: calc(14px + 3 * (100vw - 320px) / 928);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-size: calc(13px + 3 * (100vw - 320px) / 928);
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        p {
+            font-size: calc(13px + 3 * (100vw - 320px) / 928);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .experience {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .right {
+                h3 {
+                    font-size: calc(14px + 3 * (100vw - 320px) / 928);
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        font-size: calc(14px + 3 * (100vw - 320px) / 928);
+                        list-style: inside;
+                    }
+                }
             }
+        }
+
+        .education {
+            p {
+                margin-top: 6px;
+            }
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-between;
+
             ul {
+                font-size: calc(14px + 3 * (100vw - 320px) / 928);
+                font-weight: 500;
+                margin: 0;
                 padding: 0;
                 li {
-                    font-size: calc(14px + 3 * (100vw - 320px) / 928);
+                    font-size: calc(12px + 3 * (100vw - 320px) / 928);
+                    font-weight: 400;
+                    padding: calc(4px + 5 * (100vw - 320px) / 928);
                     list-style: inside;
                 }
             }
         }
-    }
 
-    .education {
-        p {
-            margin-top: 6px;
-        }
-    }
-
-    .skills {
-        display: flex;
-        justify-content: space-between;
-
-        ul {
-            font-size: calc(14px + 3 * (100vw - 320px) / 928);
-            font-weight: 500;
-            margin: 0;
-            padding: 0;
-            li {
-                font-size: calc(12px + 3 * (100vw - 320px) / 928);
-                font-weight: 400;
-                padding: calc(4px + 5 * (100vw - 320px) / 928);
-                list-style: inside;
-            }
-        }
-    }
-
-    .resume-social {
-        display: flex;
-        justify-content: space-between;
-        width: 200px;
-        transition: 0.25s;
-        padding: 15px;
-        svg:hover {
-            transition: 0.25s;
-            fill: #000;
-        }
-    }
-
-    .cv {
-        background-color: rgb(237, 243, 236);
-        padding: 18px;
-        margin-top: 20px;
-        border-radius: 5px;
-        a {
+        .resume-social {
             display: flex;
-            color: #000;
-            margin-top: 8px;
-            padding: 10px 0 10px 3px;
-            border-radius: 5px;
-            &:hover {
-                background-color: rgb(226, 230, 226);
+            justify-content: space-between;
+            width: 200px;
+            transition: 0.25s;
+            padding: 15px;
+            svg:hover {
+                transition: 0.25s;
+                fill: #000;
             }
-            svg {
-                margin-right: 5px;
+        }
+
+        .cv {
+            background-color: rgb(237, 243, 236);
+            padding: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            a {
+                display: flex;
+                color: #000;
+                margin-top: 8px;
+                padding: 10px 0 10px 3px;
+                border-radius: 5px;
+                &:hover {
+                    background-color: rgb(226, 230, 226);
+                }
+                svg {
+                    margin-right: 5px;
+                }
             }
         }
     }

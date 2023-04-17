@@ -34,22 +34,24 @@ const projectItems = [
 
 const WorkExp = () => {
     return (
-        <>
-            <h1 className={s.title}>Projects</h1>
-            {projectItems.map(({ id, name, desc, tools, img, link }) => {
-                return (
-                    <Project
-                        id={id}
-                        key={id}
-                        name={name}
-                        desc={desc}
-                        tools={tools}
-                        src={img}
-                        link={link}
-                    />
-                );
-            })}
-        </>
+        <section className={s.contact}>
+            <div className={s.container}>
+                <h1 className={s.title}>Projects</h1>
+                {projectItems.map(({ id, name, desc, tools, img, link }) => {
+                    return (
+                        <Project
+                            id={id}
+                            key={id}
+                            name={name}
+                            desc={desc}
+                            tools={tools}
+                            src={img}
+                            link={link}
+                        />
+                    );
+                })}
+            </div>
+        </section>
     );
 };
 
