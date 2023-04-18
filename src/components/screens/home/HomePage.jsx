@@ -1,8 +1,9 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import s from './home.module.scss';
+import { motion, useScroll } from 'framer-motion';
 import Social from '@/components/social/Social';
 import AnimatedText from '../../../animation/AnimatedText/AnimatedText';
+import s from './home.module.scss';
 
 const techs = ['Next.js', 'React', ' JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'S(a|c)ss'];
 const software = ['VScode', 'Figma', 'Framer', 'AdobeXD', 'Git', 'Docker'];
@@ -23,7 +24,7 @@ const HomePage = () => {
                 </div>
             </section>
             <section className={s['marquee-box']}>
-                <Marquee className={s.marquee} gradient={false} speed="100">
+                <Marquee direction="right" className={s.marquee} gradient={false} speed='100'>
                     {techs.map((item) => {
                         return <span key={item}>{item}</span>;
                     })}
@@ -33,8 +34,8 @@ const HomePage = () => {
                         return <span key={item}>{item}</span>;
                     })}
                 </Marquee>
-                <Marquee className={s.marquee} gradient={false} speed="35">
-                    {software.map((item) => {
+                <Marquee direction="right" className={s.marquee} gradient={false} speed="40">
+                    {techs.map((item) => {
                         return <span key={item}>{item}</span>;
                     })}
                 </Marquee>

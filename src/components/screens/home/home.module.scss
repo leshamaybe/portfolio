@@ -32,10 +32,23 @@
     padding: 90px 0;
     transform: skew(-6deg, -3deg);
     overflow: hidden;
+
     .marquee {
         span {
             font-size: clamp(2.5rem, 7vw, 7.5rem);
             padding: calc(14px + 10 * (100vw - 320px) / 928) calc(52px + 20 * (100vw - 320px) / 928);
+            transition: 0.2s;
+            overflow: hidden;
+            cursor: crosshair;
+
+            &:nth-child(even) {
+                font-weight: 400;
+            }
+
+            &:hover {
+                color: #063ef9;
+                transition: 0.2s;
+            }
 
             &::before {
                 content: '';
@@ -47,6 +60,7 @@
                 background-image: url('../../../assets/home/point.png');
                 background-repeat: no-repeat;
                 background-position: center;
+                background: #f36429;
                 transform: translateY(-50%);
                 border-radius: 50%;
             }
