@@ -1,22 +1,37 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@formcarry/react": "^1.0.4",
-    "@vercel/analytics": "^0.1.11",
-    "classnames": "^2.3.2",
-    "framer-motion": "^10.10.0",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-fast-marquee": "^1.3.5",
-    "sass": "^1.60.0"
-  }
+    "name": "portfolio",
+    "description": "A leshamaybe portfolio website.",
+    "version": "0.1.0",
+    "keywords": [
+        "leshamaybe",
+        "portfolio"
+    ],
+    "private": false,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leshamaybe/portfolio"
+    },
+    "author": {
+        "name": "leshamaybe",
+        "email": "vvaleksey@icloud.com",
+        "url": "https://leshamaybe.vercel.app/"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@formcarry/react": "^1.0.4",
+        "@vercel/analytics": "^0.1.11",
+        "classnames": "^2.3.2",
+        "framer-motion": "^10.10.0",
+        "next": "13.2.4",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-fast-marquee": "^1.3.5",
+        "sass": "^1.60.0"
+    }
 }
