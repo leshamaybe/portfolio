@@ -14,7 +14,9 @@ const HomePage = () => {
             <section className={s.home}>
                 <div className={s.container}>
                     <div className={s.text}>
-                        <AnimatedText text="</> Hey, I'm Aleksey" />
+                        <AnimatedText text="Hey, I'm Aleksey" />
+                        <AnimatedText text="Front-end" />
+                        <AnimatedText text="Developer" />
                         <h2>
                             I am a novice, curious developer based in Voronezh, Russia. Specialised
                             in front-end development using React, JavaScript and TypeScript.
