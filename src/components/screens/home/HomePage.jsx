@@ -1,12 +1,41 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { motion, useScroll } from 'framer-motion';
+import Button from '@/components/button/Button';
 import Social from '@/components/social/Social';
+import Project from '@/components/project/Projects';
 import AnimatedText from '../../../animation/AnimatedText/AnimatedText';
 import s from './home.module.scss';
 
 const techs = ['Next.js', 'React', ' JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'S(a|c)ss'];
 const software = ['VScode', 'Figma', 'Framer', 'AdobeXD', 'Git', 'Docker'];
+
+const projectItems = [
+    {
+        id: 1,
+        title: 'Messenger',
+        name: 'Full realtime Chat Application',
+        desc: 'The Messenger app is a real-time chat application built with React, JavaScript, Socket.io, Express, and MongoDB. It allows users to communicate through instant messaging, and provides a dynamic and responsive interface for sending and receiving messages.',
+        tools: ['React', 'Hooks', 'Express', 'Socket.io', 'MongoDB'],
+        link: 'https://github.com/leshamaybe/react-express-socket-chat-app',
+    },
+    {
+        id: 2,
+        title: 'Weather App',
+        name: 'Weather app on the OpenWeatherMap API',
+        desc: 'A weather application built with React that displays current weather conditions for a selected location. Uses OpenWeatherMap API for weather data.',
+        tools: ['React', 'Hooks', 'Axios'],
+        link: 'https://github.com/leshamaybe/react-weather-app',
+    },
+    {
+        id: 3,
+        title: 'Landing page',
+        name: 'A ReactJS based landing page',
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio asperiores aliquid in. Et dolor nobis, ad facere asperiores dicta cum numquam consequuntur tempora corporis?',
+        tools: ['React', 'Hooks', 'Redux', 'Express', 'MongoDB', 'Axios'],
+        link: '/',
+    },
+];
 
 const HomePage = () => {
     return (
@@ -25,8 +54,24 @@ const HomePage = () => {
                     <Social />
                 </div>
             </section>
+
+            <section className={s.works}>
+                {projectItems.map(({ id, title, name, desc, link }) => {
+                    return (
+                        <Project
+                            key={id}
+                            id={id}
+                            title={title}
+                            name={name}
+                            desc={desc}
+                            link={link}
+                        />
+                    );
+                })}
+            </section>
+
             <section className={s['marquee-box']}>
-                <Marquee direction="right" className={s.marquee} gradient={false} speed='100'>
+                <Marquee direction="right" className={s.marquee} gradient={false} speed="100">
                     {techs.map((item) => {
                         return <span key={item}>{item}</span>;
                     })}

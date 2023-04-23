@@ -1,187 +1,102 @@
+@import '@/styles/variables';
+
 .box {
     display: flex;
-    margin: 0 120px calc(60px + 40 * (100vw - 320px) / 928) auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
 
-    &:nth-child(odd) {
-        flex-direction: row-reverse;
-        margin: 0 0 calc(60px + 40 * (100vw - 320px) / 928) 120px;
-        .text-box {
-            align-items: flex-start;
-            text-align: start;
-            margin: 70px -40px 0 20px;
-            z-index: 1;
-        }
+    &:last-child {
+        margin-bottom: 50px;
     }
 
-    .img-box {
-        a {
-            img {
-                max-width: 760px;
-                min-width: 650px;
-                width: 100%;
-                height: auto;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .bg {
+            .inner {
+                text-align: left;
             }
         }
-    }
-
-    .text-box {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: end;
-        margin: 70px 0 0 -30px;
-        color: #2a2a2a;
-        z-index: 1;
 
         h2 {
-            font-size: calc(10px + 5 * (100vw - 320px) / 928);
-            font-weight: 400;
-            margin-bottom: calc(10px + 6 * (100vw - 320px) / 928);
+            margin: 0 calc(10px + 20 * (100vw - 320px) / 928) 0 calc(10px + 20 * (100vw - 320px) / 928);
         }
-        h1 {
-            font-size: calc(20px + 10 * (100vw - 320px) / 928);
-            font-weight: 600;
-            color: #063ef9;
-            margin-bottom: calc(10px + 5 * (100vw - 320px) / 928);
-        }
+    }
 
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin: 0 0 calc(10px + 6 * (100vw - 320px) / 928) 0;
-            padding: 0;
-            list-style: none;
+    .bg {
+        // background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0
+        //     0;
+        background: url(../../assets/works/chat-group.png) 0 0 / cover no-repeat;
 
-            li {
-                font-size: calc(11px + 2 * (100vw - 320px) / 928);
-                font-weight: 500;
-                letter-spacing: 1px;
-                margin: 0 10px 15px 0;
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        .animate-container {
-            overflow: hidden;
-        }
-
-        .btn-work {
-            border: 1px solid #f36429;
-            border-bottom: none;
+        .inner {
             position: relative;
-            font-size: calc(11px + 2 * (100vw - 320px) / 928);
-            text-align: center;
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 1px;
-                width: 0;
-                background-color: #f36429;
-                transition: 0.5s ease;
-            }
-
-            &:hover {
-                color: #fff;
-                transition-delay: 0.5s;
-            }
-
-            &:hover::before {
-                width: 100%;
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 0;
-                width: 100%;
-                background-color: #f36429;
-                transition: 0.4s ease;
-                z-index: -1;
-            }
-
-            &:hover::after {
-                height: 100%;
-                transition-delay: 0.4s;
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .box {
-        margin-right: 10px;
-        &:nth-child(odd) {
-            margin: 0 0 calc(60px + 40 * (100vw - 320px) / 928) 0px;
-        }
-        .img-box {
-            a {
-                img {
-                    max-width: 620px;
-                    min-width: 0;
-                }
-            }
-        }
-        .text-box {
-            margin: 40px 0 0 -20px;
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .box {
-        flex-direction: column;
-        margin: calc(30px + 10 * (100vw - 320px) / 928) auto;
-
-        &:nth-child(odd) {
+            display: flex;
             flex-direction: column;
-            margin: calc(30px + 10 * (100vw - 320px) / 928) auto;
-            .text-box {
-                margin: 5px 10px;
-            }
+            justify-content: center;
+            padding: 0 10%;
+            max-width: 100%;
+            height: calc(380px + 115 * (100vw - 320px) / 928);
+            text-align: right;
+            backdrop-filter: blur(50px);
+            color: #fff;
         }
 
-        .img-box {
-            a {
-                img {
-                    width: 100vw;
-                    min-width: 320px;
-                }
-            }
+        h3 {
+            font-size: calc(20px + 25 * (100vw - 320px) / 928);
+            padding-bottom: calc(20px + 10 * (100vw - 320px) / 928);
         }
 
-        .text-box {
-            margin: 5px 10px;
-            h2 {
-                font-size: calc(16px + 6 * (100vw - 320px) / 928);
-            }
-            h1 {
-                font-size: calc(21px + 11 * (100vw - 320px) / 928);
-            }
-            .btn-work {
-                padding: 10px 10px;
-                background-color: #f36429;
-                color: #fff;
-            }
+        p {
+            font-size: calc(15px + 3 * (100vw - 320px) / 928);
         }
+
+        .btn {
+            font-family: 'Monument Extended', sans-serif;
+            position: absolute;
+            bottom: -30px;
+            right: 50%;
+            transform: translateX(50%);
+            color: #fff;
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+
+    h2 {
+        letter-spacing: calc(-1px - 4 * (100vw - 320px) / 928);
+        font-size: calc(32px + 50 * (100vw - 320px) / 928);
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary;
+        margin: 0 calc(10px + 20 * (100vw - 320px) / 928) 0 calc(10px + 20 * (100vw - 320px) / 928);
     }
 }
 
-@media (min-width: 3000px) {
+@media (max-width: 768px) {
     .box {
-        .text-box {
-            h1 {
-                font-size: 50px;
-            }
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        &:nth-child(even) {
+            flex-direction: column-reverse;
             h2 {
-                font-size: 25px;
+                margin: 0 0 20px 0;
             }
+        }
+
+        .bg {
+            max-width: 100%;
+            text-align: left;
+
+            .btn {
+                text-align: center;
+            }
+        }
+
+        h2 {
+            margin: 0 0 20px 0;
         }
     }
 }

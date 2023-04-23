@@ -6,10 +6,6 @@ import s from './nav.module.scss';
 
 export const navItems = [
     {
-        href: '/works',
-        title: 'Works',
-    },
-    {
         href: '/about',
         title: 'About',
     },
