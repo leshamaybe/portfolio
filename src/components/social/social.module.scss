@@ -1,3 +1,5 @@
+@import '@/styles/variables';
+
 .social {
     display: inline-flex;
     align-items: center;
@@ -8,7 +10,7 @@
         transition: all 0.2s;
         &:hover {
             text-align: center;
-            fill: url(#Gradient-1);
+            fill: $black;
             transition: all 0.2s;
         }
     }

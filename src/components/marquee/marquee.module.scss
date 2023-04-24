@@ -1,7 +1,9 @@
+@import '@/styles/variables';
+
 .marquee {
-    max-width: 300px;
+    max-width: calc(120px + 50 * (100vw - 320px) / 928);
     background-color: rgb(249 250 251);
-    height: 40px;
+    height: calc(25px + 2 * (100vw - 320px) / 928);
     border-radius: 20px;
     transition: all 0.25s linear;
     border: 1px solid transparent;
@@ -10,35 +12,22 @@
     &:hover {
         transition: all 0.25s linear;
         transform: scale(1.02);
-        border: 1px solid rgb(190, 191, 192);
+        border: 1px solid $grey;
     }
 
     h1 {
-        font-size: 18px;
+        display: flex;
+        align-items: center;
+        font-size: calc(12px + 1 * (100vw - 320px) / 928);
         font-weight: 400;
 
         &::before {
             content: '';
-            display: inline-block;
             background-color: green;
-            width: 15px;
-            height: 15px;
+            width: calc(7px + 2 * (100vw - 320px) / 928);
+            height: calc(7px + 2 * (100vw - 320px) / 928);
             border-radius: 50%;
-            margin-right: 10px;
-        }
-    }
-}
-
-@media (min-width: 750px) and (max-width: 991px) {
-    .marquee {
-        max-width: 180px;
-        height: 30px;
-        h1 {
-            font-size: 13px;
-            &::before {
-                width: 10px;
-                height: 10px;
-            }
+            margin-right: calc(4px + 1 * (100vw - 320px) / 928);
         }
     }
 }

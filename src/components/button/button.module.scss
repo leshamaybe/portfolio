@@ -1,21 +1,12 @@
+@import '@/styles/variables';
+
 .btn {
     padding: 15px 20px;
-    background-color: transparent;
     font-size: 14px;
-    color: #000;
-    border: 1px solid #000;
-    transition: 0.2s 0.1s;
+    color: $black;
+    border: 1px solid $black;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-        color: #004dff;
-        transition: 0.2s 0.1s;
-        border-color: #004dff;
-    }
-    a {
-        margin-bottom: 30px;
-    }
 }

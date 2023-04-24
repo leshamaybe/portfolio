@@ -1,3 +1,5 @@
+@import '@/styles/variables';
+
 .contact {
     .container {
         max-width: 1528px;
@@ -7,8 +9,7 @@
             margin-top: calc(10px + 10 * (100vw - 320px) / 928);
             h1 {
                 font-size: calc(45px + 12 * (100vw - 320px) / 928);
-                color: #004dff;
-
+                color: $primary;
                 span {
                     font-weight: 400;
                     font-style: italic;
@@ -28,7 +29,7 @@
             grid-row-gap: 0px;
             margin: 128px auto 0;
             padding: 90px 0;
-            background: #1852d8;
+            background: $primary;
 
             div {
                 display: flex;
@@ -47,8 +48,8 @@
                     height: 100%;
                     background: inherit;
                     border: none;
-                    border-bottom: 2px solid #000;
-                    color: #fff;
+                    border-bottom: 2px solid $black;
+                    color: $second-color;
                 }
 
                 textarea {
@@ -58,7 +59,7 @@
 
             label {
                 font-size: calc(20px + 3 * (100vw - 320px) / 928);
-                color: #fff;
+                color: $second-color;
             }
 
             button {
@@ -69,8 +70,8 @@
                 font-family: 'Basier Circle', sans-serif;
                 font-size: calc(15px + 3 * (100vw - 320px) / 928);
                 font-weight: 600;
-                color: #000;
-                background-color: #fff;
+                color: $black;
+                background-color: $second-color;
                 text-transform: uppercase;
                 padding: 10px 30px;
                 border: none;

@@ -21,7 +21,8 @@
         }
 
         h2 {
-            margin: 0 calc(10px + 20 * (100vw - 320px) / 928) 0 calc(10px + 20 * (100vw - 320px) / 928);
+            margin: 0 calc(10px + 20 * (100vw - 320px) / 928) 0
+                calc(10px + 20 * (100vw - 320px) / 928);
         }
     }
 
@@ -39,7 +40,7 @@
             height: calc(380px + 115 * (100vw - 320px) / 928);
             text-align: right;
             backdrop-filter: blur(50px);
-            color: #fff;
+            color: $second-color;
         }
 
         h3 {
@@ -57,7 +58,7 @@
             bottom: -30px;
             right: 50%;
             transform: translateX(50%);
-            color: #fff;
+            color: $second-color;
             background: $primary;
             border-color: $primary;
         }

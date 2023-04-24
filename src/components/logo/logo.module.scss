@@ -1,13 +1,14 @@
+@import '@/styles/variables';
+
 .text {
     display: flex;
     align-items: center;
     font-weight: 800;
     font-size: calc(14px + 4 * (100vw - 320px) / 928);
-    color: #000;
-    transition: all 0.2s ease;
+    color: $black;
     text-decoration: none;
 
     svg {
-        margin-right: calc(5px + 5 * (100vw - 320px) / 928);
+        margin-right: calc(5px + 4 * (100vw - 320px) / 928);
     }
 }
