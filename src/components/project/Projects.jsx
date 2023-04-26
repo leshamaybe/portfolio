@@ -1,41 +1,31 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import s from './project.module.scss';
 import Button from '../button/Button';
 
 const Project = ({ id, title, name, desc, link }) => {
-    const movingText = {
-        hidden: { opacity: 1, scale: 0.5 },
-        visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-                delayChildren: 0.4,
-                staggerChildren: 0,
-            },
-        },
-    };
+    let { scrollYProgress } = useScroll();
+    let y = useTransform(scrollYProgress, [0, 1], ['0%', '10%']);
 
-    const movingChild = {
+    const container = {
         hidden: {
-            y: '200%',
+            y: '100%',
             transition: {
-                type: 'tween',
-                duration: 0.7,
-                linear: 0.5,
+                type: 'spring',
+                duration: 0.3,
             },
         },
         visible: {
             y: 0,
             transition: {
-                type: 'tween',
-                duration: 0.7,
+                type: 'spring',
+                duration: 0.3,
             },
         },
     };
 
     return (
-        <div className={s.box}>
+        <motion.div style={{ y }} className={s.box}>
             <div className={s.bg}>
                 <div className={s.inner}>
                     <Button classname={s.btn} link={link} />
@@ -45,7 +35,7 @@ const Project = ({ id, title, name, desc, link }) => {
             </div>
 
             <h2>{title}</h2>
-        </div>
+        </motion.div>
     );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import { motion, useScroll } from 'framer-motion';
-import Button from '@/components/button/Button';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Social from '@/components/social/Social';
 import Project from '@/components/project/Projects';
 import AnimatedText from '../../../animation/AnimatedText/AnimatedText';
@@ -16,7 +15,6 @@ const projectItems = [
         title: 'Messenger',
         name: 'Full realtime Chat Application',
         desc: 'The Messenger app is a real-time chat application built with React, JavaScript, Socket.io, Express, and MongoDB. It allows users to communicate through instant messaging, and provides a dynamic and responsive interface for sending and receiving messages.',
-        tools: ['React', 'Hooks', 'Express', 'Socket.io', 'MongoDB'],
         link: 'https://github.com/leshamaybe/react-express-socket-chat-app',
     },
     {
@@ -24,7 +22,6 @@ const projectItems = [
         title: 'Weather App',
         name: 'Weather app on the OpenWeatherMap API',
         desc: 'A weather application built with React that displays current weather conditions for a selected location. Uses OpenWeatherMap API for weather data.',
-        tools: ['React', 'Hooks', 'Axios'],
         link: 'https://github.com/leshamaybe/react-weather-app',
     },
     {
@@ -32,15 +29,17 @@ const projectItems = [
         title: 'Landing page',
         name: 'A ReactJS based landing page',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio asperiores aliquid in. Et dolor nobis, ad facere asperiores dicta cum numquam consequuntur tempora corporis?',
-        tools: ['React', 'Hooks', 'Redux', 'Express', 'MongoDB', 'Axios'],
         link: '/',
     },
 ];
 
 const HomePage = () => {
+    let { scrollYProgress } = useScroll();
+    let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+
     return (
         <>
-            <section className={s.home}>
+            <motion.section style={{y}} className={s.home}>
                 <div className={s.container}>
                     <div className={s.text}>
                         <AnimatedText text="Hey, I'm Aleksey" />
@@ -53,7 +52,7 @@ const HomePage = () => {
                     </div>
                     <Social />
                 </div>
-            </section>
+            </motion.section>
 
             <section className={s.works}>
                 {projectItems.map(({ id, title, name, desc, link }) => {
