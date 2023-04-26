@@ -25,6 +25,10 @@ const MainContainer = ({ children }) => {
                     name="keywords"
                     content="leshamaybe, portfolio, next.js, react, front-end, frontend"
                 />
+                <meta
+                    name="google-site-verification"
+                    content="ZFZEDCP0eK6-FizMfgK2shsqCntNWQOVsdwx0szmO5o"
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />
             </Head>
