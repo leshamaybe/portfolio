@@ -10,8 +10,7 @@ const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={s.container}>
-                <div className={s.empty}></div>
-                {pathname == '/resume' ? null : (
+                {pathname == '/' && (
                     <div className={s.top}>
                         <h1>Have a project in mind or want to talk?</h1>
                         <span>
