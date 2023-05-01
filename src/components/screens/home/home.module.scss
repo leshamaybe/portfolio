@@ -32,14 +32,13 @@
 
 .works {
     width: 100%;
-    margin-top: 150px;
+    margin-top: calc(80px + 30 * (100vw - 320px) / 928);
 }
 
 .marquee-box {
     align-self: center;
     width: 100vw;
-    padding: 90px 0;
-    // transform: skew(-6deg, -3deg);
+    padding: calc(70px + 15 * (100vw - 320px) / 928) 0 calc(30px + 30 * (100vw - 320px) / 928) 0;
     overflow: hidden;
 
     .marquee {

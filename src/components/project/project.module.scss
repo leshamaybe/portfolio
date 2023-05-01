@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: calc(90px + 30 * (100vw - 320px) / 928);
 
     &:last-child {
         margin-bottom: 50px;
