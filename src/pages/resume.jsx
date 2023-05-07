@@ -1,12 +1,12 @@
 import React from 'react';
-import MainContainer from '@/components/container/MainContainer';
+import Layout from '@/components/layout/Layout';
 import Resume from '@/components/screens/resume/Resume';
 
 const resume = () => {
     return (
-        <MainContainer>
+        <Layout>
             <Resume />
-        </MainContainer>
+        </Layout>
     );
 };
 

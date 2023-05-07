@@ -1,10 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import s from './logo.module.scss';
 import Link from 'next/link';
 import useWindowSize from '@/hooks/useWindowSize';
+import { motion } from 'framer-motion';
 
 const Logo = () => {
     const size = useWindowSize();
+
+    // const sliding = {
+    //     hidden: {
+    //         opacity: 0,
+    //         x: -500,
+    //     },
+    //     visible: {
+    //         opacity: 1,
+    //         x: 0,
+    //         transition: {
+    //             delay: 0.5,
+    //         },
+    //     },
+    // };
 
     return (
         <Link href={'/'} className={s.text}>

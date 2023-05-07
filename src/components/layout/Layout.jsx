@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
-import s from './mainContainer.module.scss';
+import s from './layout.module.scss';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import { motion } from 'framer-motion';
 
-const MainContainer = ({ children }) => {
+const Layout = ({ children }) => {
     const container = {
         hidden: { opacity: 0, x: 0, y: 100 },
         enter: { opacity: 1, x: 0, y: 0 },
@@ -46,4 +46,4 @@ const MainContainer = ({ children }) => {
     );
 };
 
-export default MainContainer;
+export default Layout;

@@ -1,12 +1,12 @@
 import React from 'react';
-import MainContainer from '@/components/container/MainContainer';
+import Layout from '@/components/layout/Layout';
 import ContactForm from '@/components/screens/contact/ContactForm';
 
 const contact = () => {
     return (
-        <MainContainer>
+        <Layout>
             <ContactForm />
-        </MainContainer>
+        </Layout>
     );
 };
 

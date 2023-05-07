@@ -1,10 +1,10 @@
-import MainContainer from '@/components/container/MainContainer';
+import Layout from '@/components/layout/Layout';
 import HomePage from '@/components/screens/home/HomePage';
 
 export default function Home() {
     return (
-        <MainContainer>
+        <Layout>
             <HomePage />
-        </MainContainer>
+        </Layout>
     );
 }

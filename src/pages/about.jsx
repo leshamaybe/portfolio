@@ -1,12 +1,12 @@
 import React from 'react';
-import MainContainer from '@/components/container/MainContainer';
+import Layout from '@/components/layout/Layout';
 import About from '@/components/screens/about/About';
 
 const about = () => {
     return (
-        <MainContainer>
+        <Layout>
             <About />
-        </MainContainer>
+        </Layout>
     );
 };
 
