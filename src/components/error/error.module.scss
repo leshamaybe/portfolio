@@ -4,8 +4,14 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    text-align: center;
     h1 {
         font-size: calc(30px + 60 * (100vw - 320px) / 928);
+    }
+    h2 {
+        font-size: calc(13px + 10 * (100vw - 320px) / 928);
+        font-weight: 300;
+        padding: 15px;
     }
     a {
         text-decoration: none;
