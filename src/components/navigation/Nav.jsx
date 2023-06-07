@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import cn from 'classnames';
 import s from './nav.module.scss';
 
@@ -20,7 +20,7 @@ export const navItems = [
 ];
 
 const Nav = () => {
-    const { pathname } = useRouter();
+    const pathname = usePathname();
 
     return (
         <nav className={s.navbar}>
@@ -29,6 +29,7 @@ const Nav = () => {
                     <li key={title}>
                         <Link
                             href={href}
+                            data-testid={title}
                             className={cn(s.link, { [s.current]: href === pathname })}>
                             {title}
                         </Link>

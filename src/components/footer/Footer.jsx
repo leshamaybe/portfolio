@@ -1,11 +1,11 @@
 import React from 'react';
 import Social from '../social/Social';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import s from './footer.module.scss';
 
 const Footer = () => {
-    const { pathname } = useRouter();
+    const pathname = usePathname();
 
     return (
         <footer className={s.footer}>
