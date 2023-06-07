@@ -13,7 +13,7 @@ const ContactForm = () => {
     }
 
     return (
-        <section className={s.contact}>
+        <section data-testid="contact" className={s.contact}>
             <div className={s.container}>
                 <div className={s.top}>
                     <h1>

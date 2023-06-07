@@ -6,7 +6,7 @@ import Download from '../../../assets/resume/Download';
 
 const Resume = () => {
     return (
-        <section className={s.resume}>
+        <section data-testid="resume" className={s.resume}>
             <div className={s.container}>
                 <h1>Aleksey Voronko</h1>
                 <h3>👋 I'm a frontend developer</h3>

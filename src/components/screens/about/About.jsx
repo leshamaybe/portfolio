@@ -3,7 +3,7 @@ import s from './about.module.scss';
 
 const About = () => {
     return (
-        <section className={s.about}>
+        <section data-testid="about" className={s.about}>
             <div className={s.container}>
                 Hi, hello and welcome stranger
                 <p>
