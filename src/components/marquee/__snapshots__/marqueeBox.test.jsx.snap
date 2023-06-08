@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarqueeBox MarqueeBox renders correctly 1`] = `
+<div>
+  <div
+    class="marquee marquee-container"
+    style="--pause-on-hover: running; --pause-on-click: running;"
+  >
+    <div
+      class="overlay"
+      style="--gradient-color: rgba([, 2, 5, 1), rgba([, 2, 5, 0); --gradient-width: 200px;"
+    />
+    <div
+      class="marquee"
+      style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite;"
+    >
+      <h1>
+        AVAILABLE FOR WORK
+      </h1>
+    </div>
+    <div
+      aria-hidden="true"
+      class="marquee"
+      style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite;"
+    >
+      <h1>
+        AVAILABLE FOR WORK
+      </h1>
+    </div>
+  </div>
+</div>
+`;

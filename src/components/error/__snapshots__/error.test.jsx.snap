@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Error renders correctly 1`] = `
+<div>
+  <div
+    class="error"
+  >
+    <h1>
+      404
+    </h1>
+    <h2>
+      Ooops... There's nothing in here
+    </h2>
+    <a
+      href="/"
+    >
+      ←Back home page
+    </a>
+  </div>
+</div>
+`;

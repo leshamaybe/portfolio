@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Project renders correctly 1`] = `
+<div>
+  <div
+    class="box"
+    style="transform: translateY(0%) translateZ(0);"
+  >
+    <div
+      class="bg"
+    >
+      <div
+        class="inner"
+      >
+        <a
+          class="btn btn"
+          href="/"
+        >
+          VIEW PROJECT
+        </a>
+        <h3 />
+        <p />
+      </div>
+    </div>
+    <h2 />
+  </div>
+</div>
+`;
