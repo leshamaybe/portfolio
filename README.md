@@ -50,8 +50,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 I use [FormCarry](https://formcarry.com/) to implement a contact form. Register with FormCarry for free to get the API key and add it to your `.env.local` as `FORM_KEY` to make the contact form work.
 
-Please update the email address in `/src/pages/api/contact/send.ts` to ensure I do not receive all your contact form submissions 😂
-
 ### Vercel Analytics
 
 [Vercel Analytics](https://vercel.com/analytics) is installed in `/src/pages/app.js`. If you don't want to use Vercel Analytics or don't intend to host your site on Vercel, you can remove this.
