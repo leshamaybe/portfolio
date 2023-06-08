@@ -27,6 +27,7 @@ const Logo = () => {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     data-name="Layer 1"
+                    data-testid="Logo"
                     viewBox="0 0 24 24"
                     width={size.width <= 768 ? '17' : '24'}
                     height={size.width <= 768 ? '17' : '24'}>
