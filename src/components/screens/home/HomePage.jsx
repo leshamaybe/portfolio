@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Social from '@/components/social/Social';
 import Project from '@/components/project/Projects';
 import AnimatedText from '../../../animation/AnimatedText/AnimatedText';
-import s from './home.module.scss';
 
 const techs = ['Next.js', 'React', ' JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'S(a|c)ss'];
 const software = ['VScode', 'Figma', 'Framer', 'AdobeXD', 'Git', 'Docker'];
@@ -39,13 +38,14 @@ const HomePage = () => {
 
     return (
         <>
-            <motion.section style={{y}} className={s.home}>
-                <div className={s.container}>
-                    <div className={s.text}>
-                        <AnimatedText text="Hey, I'm Aleksey" />
-                        <AnimatedText text="Front-end" />
-                        <AnimatedText text="Developer" />
-                        <h2>
+            <motion.section style={{ y }} className="md:w-[90%] w-full">
+                <div className="flex flex-col font-monument uppercase pt-10+10 px-4">
+                    <div>
+                        <AnimatedText
+                            text="Hey, I'm Aleksey Front-end Developer"
+                            className="max-[768px]:text-26+50 max-[768px]:w-full min-[3000px]:text-[240px] text-23+72 w-[90%] font-extrabold text-primary-color tracking-tight leading-25+60"
+                        />
+                        <h2 className="md:mt-[150px] md:mb-10 md:ml-[50%] md:text-right md:max-w-[70%] mt-5 mb-[40px] mx-0 text-left max-w-full text-18+7 leading-30+15 text-primary-color ">
                             I am a novice, curious developer based in Voronezh, Russia. Specialised
                             in front-end development using React, JavaScript and TypeScript.
                         </h2>
@@ -54,7 +54,7 @@ const HomePage = () => {
                 </div>
             </motion.section>
 
-            <section className={s.works}>
+            <section className="w-full mt-80+30">
                 {projectItems.map(({ id, title, name, desc, link }) => {
                     return (
                         <Project
@@ -69,20 +69,38 @@ const HomePage = () => {
                 })}
             </section>
 
-            <section className={s['marquee-box']}>
-                <Marquee direction="right" className={s.marquee} gradient={false} speed="100">
+            <section className="self-center w-[100vw] pt-70+15 pb-3 overflow-hidden">
+                <Marquee direction="right" gradient={false} speed="100">
                     {techs.map((item) => {
-                        return <span key={item}>{item}</span>;
+                        return (
+                            <span
+                                className="text-marquee-dynamic py-10+10 px-52+20 duration-[0.2s] cursor-crosshair even:font-medium hover:text-primary-color before:orange-circle"
+                                key={item}>
+                                {item}
+                            </span>
+                        );
                     })}
                 </Marquee>
-                <Marquee className={s.marquee} gradient={false} speed="70">
+                <Marquee gradient={false} speed="70">
                     {software.map((item) => {
-                        return <span key={item}>{item}</span>;
+                        return (
+                            <span
+                                className="text-marquee-dynamic py-10+10 px-52+20 duration-[0.2s] cursor-crosshair even:font-medium hover:text-primary-color before:orange-circle"
+                                key={item}>
+                                {item}
+                            </span>
+                        );
                     })}
                 </Marquee>
-                <Marquee direction="right" className={s.marquee} gradient={false} speed="40">
+                <Marquee direction="right" gradient={false} speed="40">
                     {techs.map((item) => {
-                        return <span key={item}>{item}</span>;
+                        return (
+                            <span
+                                className="text-marquee-dynamic py-10+10 px-52+20 duration-[0.2s] cursor-crosshair even:font-medium hover:text-primary-color before:orange-circle"
+                                key={item}>
+                                {item}
+                            </span>
+                        );
                     })}
                 </Marquee>
             </section>

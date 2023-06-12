@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic';
 import useWindowSize from '@/hooks/useWindowSize';
 import Nav from '../navigation/Nav';
 import Logo from '../logo/Logo';
-import s from './header.module.scss';
 
 const LazyMarquee = dynamic(() => import('../marquee/MarqueeBox'));
 
@@ -11,8 +10,8 @@ const Header = () => {
     const size = useWindowSize();
 
     return (
-        <header className={s.header}>
-            <div className={s.container}>
+        <header className="w-full">
+            <div className="flex flex-row justify-between items-center px-4 py-7">
                 <Logo />
                 {size.width > 750 && <LazyMarquee />}
                 <Nav />
