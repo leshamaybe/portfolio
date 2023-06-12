@@ -36,9 +36,9 @@ const AnimatedText = ({ text, className }) => {
     };
 
     return (
-        <motion.h1 className={cn(s.display, className)} variants={container} initial="hidden" animate="visible">
+        <motion.h1 className={className} variants={container} initial="hidden" animate="visible">
             {words.map((word, i) => (
-                <motion.span className={s.spacing} variants={child} key={i}>
+                <motion.span className="mr-[18px] last:mr-0" variants={child} key={i}>
                     {word}
                 </motion.span>
             ))}
