@@ -44,6 +44,7 @@ const HomePage = () => {
                         <AnimatedText
                             text="Hey, I'm Aleksey Front-end Developer"
                             className="flex flex-wrap overflow-hidden max-[768px]:text-27+50 min-[3000px]:text-[240px] text-23+72 w-full md:w-[90%] font-extrabold text-primary-color tracking-tight leading-25+60"
+                            classNameWord="mr-[18px] last:mr-0"
                         />
                         <h2 className="md:mt-[150px] md:mb-10 md:ml-[50%] md:text-right md:max-w-[70%] mt-5 mb-[40px] mx-0 text-left max-w-full text-18+7 leading-30+15 text-primary-color ">
                             I am a novice, curious developer based in Voronezh, Russia. Specialised

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AnimatedText = ({ text, className }) => {
+const AnimatedText = ({ text, className, classNameWord }) => {
     const words = text.split(' ');
 
     const container = {
@@ -21,7 +21,7 @@ const AnimatedText = ({ text, className }) => {
                 damping: 12,
                 stiffness: 100,
             },
-            marginRight: 18,
+            // marginRight: 18,
         },
         hidden: {
             opacity: 0,
@@ -37,7 +37,7 @@ const AnimatedText = ({ text, className }) => {
     return (
         <motion.h1 className={className} variants={container} initial="hidden" animate="visible">
             {words.map((word, i) => (
-                <motion.span variants={child} key={i}>
+                <motion.span className={classNameWord} variants={child} key={i}>
                     {word}
                 </motion.span>
             ))}
