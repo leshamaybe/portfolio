@@ -9,11 +9,11 @@ const Footer = () => {
     return (
         <footer className="max-w-[1528px] w-full flex flex-col py-10 px-4">
             {pathname == '/' && (
-                <div className="flex flex-col items-center text-primary-color mb-10+10">
+                <div className="flex flex-col items-center text-primary-color mb-20+15">
                     <h1 className="uppercase font-monument text-20+25 text-center font-extrabold mb-10+10">
                         Have a project in mind or want to talk?
                     </h1>
-                    <span className="text-18+7">
+                    <span className="text-18+7 text-center">
                         Say hey at
                         <Link
                             className="py-[5px] pr-[5px] ml-[5px] text-second-color bg-primary-black bg-wave hover:bg-hover-wave bg-repeat-x bg-[0_100%] bg-[length:auto_5px] "
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             )}
             <div className="flex items-center justify-between w-full">
-                <h2 className='text-12+3'>© 2023 leshamaybe</h2>
+                <h2 className="text-12+3">© 2023 leshamaybe</h2>
                 <Social />
             </div>
         </footer>
