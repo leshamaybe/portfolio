@@ -3,30 +3,38 @@
 exports[`Nav Nav renders correctly 1`] = `
 <div>
   <nav
-    class="navbar"
+    class="max-w-[450px] w-full"
   >
-    <ul>
-      <li>
+    <ul
+      class="flex justify-around my-4 p-0"
+    >
+      <li
+        class="list-none"
+      >
         <a
-          class="link"
+          class="bg-gradient p-[5px] text-12+3 duration-[0.25s] ease hover:bg-[length:100%_2px] hover:text-primary-black text-dark-grey"
           data-testid="About"
           href="/about"
         >
           About
         </a>
       </li>
-      <li>
+      <li
+        class="list-none"
+      >
         <a
-          class="link"
+          class="bg-gradient p-[5px] text-12+3 duration-[0.25s] ease hover:bg-[length:100%_2px] hover:text-primary-black text-dark-grey"
           data-testid="Resume"
           href="/resume"
         >
           Resume
         </a>
       </li>
-      <li>
+      <li
+        class="list-none"
+      >
         <a
-          class="link"
+          class="bg-gradient p-[5px] text-12+3 duration-[0.25s] ease hover:bg-[length:100%_2px] hover:text-primary-black text-dark-grey"
           data-testid="Contact"
           href="/contact"
         >

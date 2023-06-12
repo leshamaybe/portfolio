@@ -3,7 +3,7 @@
 exports[`Button Button renders correctly 1`] = `
 <div>
   <a
-    class="btn"
+    class="py-4 px-5 text-[14px] tracking-[2px] uppercase cursor-pointer"
     href="/"
   >
     VIEW PROJECT

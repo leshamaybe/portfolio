@@ -11,6 +11,7 @@ const config = {
     moduleNameMapper: {
         '^@/components/(.*)$': '<rootDir>/components/$1',
         '^@/pages/(.*)$': '<rootDir>/pages/$1',
+        '@/mockData(.*)': '<rootDir>/src/__mocks__/$1',
     },
     testEnvironment: 'jest-environment-jsdom',
 };
